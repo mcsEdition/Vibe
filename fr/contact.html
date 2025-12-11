@@ -70,59 +70,7 @@
       </div>
     </section>
 
-    <section class="content-section">
-      <h2>Formulaire de contact</h2>
-      <p>Remplissez le formulaire ci-dessous et nous vous repondrons dans les plus brefs delais.</p>
-
-      <div class="card" style="margin-top: 2rem;">
-        <form id="contactForm" onsubmit="handleSubmit(event)">
-          <div style="margin-bottom: 1.5rem;">
-            <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-primary);">Sujet de votre demande *</label>
-            <select id="subject" name="subject" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 1rem;">
-              <option value="">Selectionnez un sujet</option>
-              <option value="general">Question generale</option>
-              <option value="technical">Probleme technique</option>
-              <option value="account">Gestion de compte</option>
-              <option value="delete">Suppression de compte</option>
-              <option value="data">Demande RGPD (donnees personnelles)</option>
-              <option value="report">Signalement d'un utilisateur</option>
-              <option value="partnership">Partenariat</option>
-              <option value="other">Autre</option>
-            </select>
-          </div>
-
-          <div style="margin-bottom: 1.5rem;">
-            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-primary);">Votre email *</label>
-            <input type="email" id="email" name="email" required placeholder="votre@email.com" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 1rem;">
-          </div>
-
-          <div style="margin-bottom: 1.5rem;">
-            <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-primary);">Votre nom</label>
-            <input type="text" id="name" name="name" placeholder="Votre nom (optionnel)" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 1rem;">
-          </div>
-
-          <div style="margin-bottom: 1.5rem;">
-            <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-primary);">Votre message *</label>
-            <textarea id="message" name="message" required rows="6" placeholder="Decrivez votre demande en detail..." style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 1rem; resize: vertical;"></textarea>
-          </div>
-
-          <div style="margin-bottom: 1.5rem;">
-            <label style="display: flex; align-items: flex-start; gap: 0.5rem; cursor: pointer;">
-              <input type="checkbox" id="consent" name="consent" required style="margin-top: 0.25rem;">
-              <span style="font-size: 0.9rem; color: var(--text-secondary);">J'accepte que mes donnees soient utilisees pour traiter ma demande conformement a la <a href="privacy.html">Politique de confidentialite</a>. *</span>
-            </label>
-          </div>
-
-          <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
-        </form>
-
-        <div id="formSuccess" style="display: none; text-align: center; padding: 2rem;">
-          <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
-          <h3 style="color: var(--success);">Message envoye !</h3>
-          <p>Merci pour votre message. Nous vous repondrons dans les plus brefs delais.</p>
-        </div>
-      </div>
-    </section>
+    
 
     <section class="content-section">
       <h2>Delais de reponse</h2>
