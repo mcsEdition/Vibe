@@ -52,21 +52,21 @@
         <div class="card-icon">🔧</div>
         <h3>Support technique</h3>
         <p>Probleme technique, bug ou dysfonctionnement de l'application ?</p>
-        <p><strong>Email :</strong> tech@vibe-travel.app</p>
+        <p><strong>Email :</strong> contact@mcsedition.org</p>
       </div>
 
       <div class="card">
         <div class="card-icon">🔒</div>
         <h3>Confidentialite & Donnees</h3>
         <p>Questions sur vos donnees personnelles, demande RGPD ?</p>
-        <p><strong>Email :</strong> privacy@vibe-travel.app</p>
+        <p><strong>Email :</strong> contact@mcsedition.org</p>
       </div>
 
       <div class="card">
         <div class="card-icon">⚠️</div>
         <h3>Signalement urgent</h3>
         <p>Comportement dangereux ou illegal a signaler en urgence ?</p>
-        <p><strong>Email :</strong> safety@vibe-travel.app</p>
+        <p><strong>Email :</strong> contact@mcsedition.org</p>
       </div>
     </section>
 
@@ -234,9 +234,9 @@
 
       // Determine email based on subject
       let toEmail = 'contact@mcsedition.org';
-      if (subject === 'technical') toEmail = 'tech@vibe-travel.app';
-      if (subject === 'data' || subject === 'delete') toEmail = 'privacy@vibe-travel.app';
-      if (subject === 'report') toEmail = 'safety@vibe-travel.app';
+      if (subject === 'technical') toEmail = 'contact@mcsedition.org';
+      if (subject === 'data' || subject === 'delete') toEmail = 'contact@mcsedition.org';
+      if (subject === 'report') toEmail = 'contact@mcsedition.org';
 
       // Open mailto
       window.location.href = `mailto:${toEmail}?subject=${mailtoSubject}&body=${mailtoBody}`;
