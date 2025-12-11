@@ -58,21 +58,21 @@
         <div class="card-icon">🔧</div>
         <h3>Technical Support</h3>
         <p>Technical problem, bug or app malfunction?</p>
-        <p><strong>Email:</strong> tech@vibe-travel.app</p>
+        <p><strong>Email:</strong> contact@mcsedition.org</p>
       </div>
 
       <div class="card">
         <div class="card-icon">🔒</div>
         <h3>Privacy & Data</h3>
         <p>Questions about your personal data, GDPR request?</p>
-        <p><strong>Email:</strong> privacy@vibe-travel.app</p>
+        <p><strong>Email:</strong> contact@mcsedition.org</p>
       </div>
 
       <div class="card">
         <div class="card-icon">⚠️</div>
         <h3>Urgent Report</h3>
         <p>Dangerous or illegal behavior to report urgently?</p>
-        <p><strong>Email:</strong> safety@vibe-travel.app</p>
+        <p><strong>Email:</strong> contact@mcsedition.org</p>
       </div>
     </section>
 
@@ -237,9 +237,9 @@
       const mailtoBody = encodeURIComponent(`Name: ${name || 'Not specified'}\nEmail: ${email}\n\nMessage:\n${message}`);
 
       let toEmail = 'contact@mcsedition.org';
-      if (subject === 'technical') toEmail = 'tech@vibe-travel.app';
-      if (subject === 'data' || subject === 'delete') toEmail = 'privacy@vibe-travel.app';
-      if (subject === 'report') toEmail = 'safety@vibe-travel.app';
+      if (subject === 'technical') toEmail = 'contact@mcsedition.org';
+      if (subject === 'data' || subject === 'delete') toEmail = 'contact@mcsedition.org';
+      if (subject === 'report') toEmail = 'contact@mcsedition.org';
 
       window.location.href = `mailto:${toEmail}?subject=${mailtoSubject}&body=${mailtoBody}`;
 
