@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Guide d'utilisation complet de l'application Vibe - Apprenez a utiliser toutes les fonctionnalites">
+  <title>Guide d'utilisation | Vibe</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/png" href="../assets/images/vibe-icon.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="../assets/images/logo3.png" alt="Vibe Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="guide.html" class="active">Guide</a></li>
+        <li><a href="privacy.html">Confidentialite</a></li>
+        <li><a href="terms.html">CGU</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Guide d'utilisation</h1>
+    <p>Decouvrez comment utiliser Vibe pour connecter avec des voyageurs du monde entier.</p>
+  </section>
+
+  <main>
+    <div class="toc">
+      <h4>Table des matieres</h4>
+      <ul>
+        <li><a href="#demarrage">Demarrage rapide</a></li>
+        <li><a href="#profil">Creer votre profil</a></li>
+        <li><a href="#carte">La carte interactive</a></li>
+        <li><a href="#voyages">Creer un voyage</a></li>
+        <li><a href="#messagerie">Messagerie</a></li>
+        <li><a href="#flashmeetup">Flash Meetups</a></li>
+        <li><a href="#securite">Securite et blocage</a></li>
+        <li><a href="#parametres">Parametres</a></li>
+      </ul>
+    </div>
+
+    <section id="demarrage" class="content-section">
+      <h2>Demarrage rapide</h2>
+      <p>Bienvenue sur Vibe ! Voici comment commencer a utiliser l'application en quelques etapes simples.</p>
+
+      <ol class="steps">
+        <li>
+          <strong>Telechargez l'application</strong><br>
+          Vibe est disponible sur l'App Store (iOS) et Google Play Store (Android).
+        </li>
+        <li>
+          <strong>Creez votre compte</strong><br>
+          Inscrivez-vous avec votre email ou connectez-vous via Google ou Apple pour un acces rapide.
+        </li>
+        <li>
+          <strong>Completez votre profil</strong><br>
+          Ajoutez vos photos, votre nationalite et vos interets de voyage pour que les autres voyageurs puissent vous connaitre.
+        </li>
+        <li>
+          <strong>Explorez la carte</strong><br>
+          Decouvrez les voyageurs presents ou a venir dans votre destination.
+        </li>
+        <li>
+          <strong>Connectez-vous</strong><br>
+          Envoyez des demandes de contact et commencez a echanger !
+        </li>
+      </ol>
+    </section>
+
+    <section id="profil" class="content-section">
+      <h2>Creer votre profil</h2>
+      <p>Un profil complet augmente vos chances de connecter avec d'autres voyageurs.</p>
+
+      <h3>Informations essentielles</h3>
+      <div class="feature-grid">
+        <div class="card">
+          <h3>Photo de profil</h3>
+          <p>Choisissez une photo claire ou vous etes reconnaissable. Les photos de groupe ou les images sans visage reduisent la confiance des autres utilisateurs.</p>
+        </div>
+
+        <div class="card">
+          <h3>Prenom</h3>
+          <p>Utilisez votre vrai prenom pour faciliter les echanges authentiques avec d'autres voyageurs.</p>
+        </div>
+
+        <div class="card">
+          <h3>Nationalite</h3>
+          <p>Indiquez votre pays d'origine. Cela aide les autres voyageurs a vous trouver et a engager la conversation.</p>
+        </div>
+
+        <div class="card">
+          <h3>Date de naissance</h3>
+          <p>Votre age sera calcule et affiche aux autres utilisateurs. Seules les personnes de 18 ans et plus peuvent utiliser l'application.</p>
+        </div>
+      </div>
+
+      <h3>Personnaliser votre profil</h3>
+      <ul>
+        <li><strong>Biographie :</strong> Decrivez-vous en quelques phrases. Parlez de vos passions, de vos experiences de voyage preferees.</li>
+        <li><strong>Objectifs de voyage :</strong> Selectionnez ce que vous recherchez (compagnons de voyage, conseils locaux, activites, etc.)</li>
+        <li><strong>Interets :</strong> Ajoutez vos centres d'interet pour trouver des voyageurs similaires.</li>
+        <li><strong>Photos supplementaires :</strong> Ajoutez jusqu'a 6 photos pour montrer votre personnalite.</li>
+      </ul>
+
+      <div class="alert alert-info">
+        <strong>Conseil :</strong> Un profil complet avec plusieurs photos et une biographie detaillee recoit jusqu'a 5 fois plus de demandes de contact !
+      </div>
+    </section>
+
+    <section id="carte" class="content-section">
+      <h2>La carte interactive</h2>
+      <p>La carte est le coeur de Vibe. Elle vous permet de visualiser les voyageurs du monde entier.</p>
+
+      <h3>Types de pins sur la carte</h3>
+      <div class="feature-grid">
+        <div class="card">
+          <h3 style="color: #7D9B76;">Pin vert</h3>
+          <p><strong>"Ici maintenant"</strong> - Le voyageur est actuellement present a cet endroit.</p>
+        </div>
+
+        <div class="card">
+          <h3 style="color: #3B82F6;">Pin bleu</h3>
+          <p><strong>"Bientot la"</strong> - Le voyageur prevoit de se rendre a cet endroit prochainement.</p>
+        </div>
+      </div>
+
+      <h3>Interagir avec les pins</h3>
+      <ol>
+        <li>Appuyez sur un pin pour voir un apercu du profil</li>
+        <li>Appuyez sur "Voir le profil" pour acceder au profil complet</li>
+        <li>Depuis le profil, vous pouvez envoyer une demande de contact</li>
+      </ol>
+
+      <h3>Filtrer la carte</h3>
+      <p>Utilisez les filtres pour affiner votre recherche :</p>
+      <ul>
+        <li>Par ville ou destination</li>
+        <li>Par dates de voyage</li>
+        <li>Par type de presence (ici maintenant / bientot la)</li>
+      </ul>
+    </section>
+
+    <section id="voyages" class="content-section">
+      <h2>Creer un voyage</h2>
+      <p>Partagez vos projets de voyage pour que d'autres voyageurs puissent vous trouver.</p>
+
+      <h3>Etapes de creation</h3>
+      <ol class="steps">
+        <li>
+          <strong>Choisissez votre destination</strong><br>
+          Selectionnez la ville ou vous vous rendez. Vous pouvez indiquer si la destination est definitive ou encore en reflexion.
+        </li>
+        <li>
+          <strong>Definissez les dates</strong><br>
+          Indiquez vos dates d'arrivee et de depart prevues.
+        </li>
+        <li>
+          <strong>Ajoutez des details (optionnel)</strong><br>
+          Budget estime, activites prevues, ce que vous recherchez.
+        </li>
+        <li>
+          <strong>Publiez votre voyage</strong><br>
+          Votre voyage sera visible sur la carte et dans la section Discover.
+        </li>
+      </ol>
+
+      <h3>Gerer vos voyages</h3>
+      <p>Depuis la section "Mes voyages", vous pouvez :</p>
+      <ul>
+        <li>Voir tous vos voyages actifs et passes</li>
+        <li>Modifier les details d'un voyage</li>
+        <li>Supprimer un voyage</li>
+        <li>Voir qui s'interesse a votre voyage</li>
+      </ul>
+    </section>
+
+    <section id="messagerie" class="content-section">
+      <h2>Messagerie</h2>
+      <p>La messagerie vous permet de communiquer avec les voyageurs avec qui vous etes connecte.</p>
+
+      <h3>Demarrer une conversation</h3>
+      <ol>
+        <li>Visitez le profil d'un voyageur</li>
+        <li>Appuyez sur "Envoyer un message" ou "Vibe"</li>
+        <li>Si l'utilisateur accepte, vous pourrez echanger des messages</li>
+      </ol>
+
+      <h3>Fonctionnalites de la messagerie</h3>
+      <ul>
+        <li><strong>Messages texte :</strong> Envoyez des messages instantanes</li>
+        <li><strong>Indicateur de lecture :</strong> Voyez quand vos messages sont lus</li>
+        <li><strong>Notifications :</strong> Recevez des alertes pour les nouveaux messages</li>
+      </ul>
+
+      <div class="alert alert-warning">
+        <strong>Rappel de securite :</strong> Ne partagez jamais d'informations financieres ou de donnees sensibles via la messagerie.
+      </div>
+    </section>
+
+    <section id="flashmeetup" class="content-section">
+      <h2>Flash Meetups</h2>
+      <p>Les Flash Meetups sont des rencontres spontanees organisees par les voyageurs.</p>
+
+      <h3>Creer un Flash Meetup</h3>
+      <ol class="steps">
+        <li>
+          <strong>Definissez le lieu</strong><br>
+          Choisissez un lieu public pour la rencontre (cafe, place, monument, etc.)
+        </li>
+        <li>
+          <strong>Choisissez l'heure</strong><br>
+          Les Flash Meetups sont pour des rencontres dans les prochaines heures.
+        </li>
+        <li>
+          <strong>Ajoutez une description</strong><br>
+          Decrivez l'activite ou le but de la rencontre.
+        </li>
+        <li>
+          <strong>Definissez le nombre de participants</strong><br>
+          Limitez si necessaire le nombre de personnes.
+        </li>
+      </ol>
+
+      <h3>Rejoindre un Flash Meetup</h3>
+      <p>Les Flash Meetups disponibles apparaissent sur la carte et dans la section Discover. Appuyez sur un meetup pour voir les details et rejoindre.</p>
+
+      <div class="alert alert-info">
+        <strong>Conseil :</strong> Les Flash Meetups sont ideaux pour rencontrer des voyageurs rapidement quand vous etes deja sur place !
+      </div>
+    </section>
+
+    <section id="securite" class="content-section">
+      <h2>Securite et blocage</h2>
+      <p>Votre securite est notre priorite. Voici les outils a votre disposition.</p>
+
+      <h3>Bloquer un utilisateur</h3>
+      <p>Si un utilisateur vous importune :</p>
+      <ol>
+        <li>Accedez a son profil ou a la conversation</li>
+        <li>Appuyez sur le menu (trois points)</li>
+        <li>Selectionnez "Bloquer"</li>
+        <li>Confirmez le blocage</li>
+      </ol>
+      <p>L'utilisateur bloque ne pourra plus vous contacter ni voir votre profil. Cette action est definitive.</p>
+
+      <h3>Signaler un utilisateur</h3>
+      <p>Pour signaler un comportement inapproprie :</p>
+      <ol>
+        <li>Accedez au profil ou a la conversation</li>
+        <li>Appuyez sur le menu (trois points)</li>
+        <li>Selectionnez "Signaler"</li>
+        <li>Choisissez la raison du signalement</li>
+        <li>Ajoutez des details si necessaire</li>
+      </ol>
+
+      <h3>Conseils de securite pour les rencontres</h3>
+      <div class="alert alert-warning">
+        <ul>
+          <li>Rencontrez toujours dans des lieux publics</li>
+          <li>Informez un proche de vos projets</li>
+          <li>Faites confiance a votre instinct</li>
+          <li>Ne partagez pas d'informations personnelles sensibles</li>
+          <li>Evitez de monter dans le vehicule d'un inconnu</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="parametres" class="content-section">
+      <h2>Parametres</h2>
+      <p>Personnalisez votre experience Vibe depuis les parametres.</p>
+
+      <h3>Compte</h3>
+      <ul>
+        <li><strong>Modifier le profil :</strong> Mettez a jour vos informations et photos</li>
+        <li><strong>Changer le mot de passe :</strong> Securisez votre compte</li>
+        <li><strong>Email :</strong> Modifiez votre adresse email</li>
+      </ul>
+
+      <h3>Notifications</h3>
+      <ul>
+        <li><strong>Messages :</strong> Activez/desactivez les notifications de messages</li>
+        <li><strong>Demandes de contact :</strong> Soyez alerte des nouvelles demandes</li>
+        <li><strong>Flash Meetups :</strong> Notifications pour les meetups a proximite</li>
+      </ul>
+
+      <h3>Confidentialite</h3>
+      <ul>
+        <li><strong>Visibilite du profil :</strong> Controlez qui peut voir votre profil</li>
+        <li><strong>Localisation :</strong> Gerez le partage de votre position</li>
+        <li><strong>Donnees :</strong> Telechargez ou supprimez vos donnees</li>
+      </ul>
+
+      <h3>Application</h3>
+      <ul>
+        <li><strong>Langue :</strong> Choisissez la langue de l'interface</li>
+        <li><strong>Theme :</strong> Mode clair ou sombre</li>
+      </ul>
+
+      <div class="alert alert-info">
+        <strong>Besoin d'aide ?</strong> Consultez notre <a href="faq.html">FAQ</a> ou <a href="contact.html">contactez-nous</a>.
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Vibe</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="guide.html">Guide d'utilisation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Conditions d'utilisation</a></li>
+          <li><a href="privacy.html">Politique de confidentialite</a></li>
+          <li><a href="account.html">Gestion des donnees</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="account.html#delete">Supprimer mon compte</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Vibe. Tous droits reserves.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" id="backToTop">↑</a>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('backToTop');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>

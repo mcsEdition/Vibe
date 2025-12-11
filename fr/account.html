@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gestion de compte Vibe - Suppression de compte, gestion des donnees personnelles">
+  <title>Gestion du compte | Vibe</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/png" href="../assets/images/vibe-icon.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="../assets/images/logo3.png" alt="Vibe Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="guide.html">Guide</a></li>
+        <li><a href="privacy.html">Confidentialite</a></li>
+        <li><a href="terms.html">CGU</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Gestion du compte</h1>
+    <p>Gerez vos donnees personnelles, modifiez vos informations ou supprimez votre compte.</p>
+  </section>
+
+  <main>
+    <div class="toc">
+      <h4>Table des matieres</h4>
+      <ul>
+        <li><a href="#donnees">Vos donnees personnelles</a></li>
+        <li><a href="#telecharger">Telecharger vos donnees</a></li>
+        <li><a href="#modifier">Modifier vos informations</a></li>
+        <li><a href="#delete">Supprimer votre compte</a></li>
+        <li><a href="#consequences">Consequences de la suppression</a></li>
+      </ul>
+    </div>
+
+    <section id="donnees" class="content-section">
+      <h2>Vos donnees personnelles</h2>
+      <p>Vibe collecte et stocke les donnees suivantes liees a votre compte :</p>
+
+      <div class="feature-grid">
+        <div class="card">
+          <h3>Informations de compte</h3>
+          <ul>
+            <li>Adresse email</li>
+            <li>Mot de passe (chiffre)</li>
+            <li>Date de creation du compte</li>
+            <li>Methode de connexion</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Profil</h3>
+          <ul>
+            <li>Prenom</li>
+            <li>Date de naissance</li>
+            <li>Nationalite</li>
+            <li>Photos de profil</li>
+            <li>Biographie</li>
+            <li>Interets</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Activite</h3>
+          <ul>
+            <li>Voyages crees</li>
+            <li>Conversations</li>
+            <li>Messages envoyes</li>
+            <li>Demandes de contact</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Donnees techniques</h3>
+          <ul>
+            <li>Derniere connexion</li>
+            <li>Type d'appareil</li>
+            <li>Historique de localisation</li>
+            <li>Logs de connexion</li>
+          </ul>
+        </div>
+      </div>
+
+      <p>Pour plus de details sur la collecte et l'utilisation de vos donnees, consultez notre <a href="privacy.html">Politique de confidentialite</a>.</p>
+    </section>
+
+    <section id="telecharger" class="content-section">
+      <h2>Telecharger vos donnees</h2>
+      <p>Conformement au RGPD, vous avez le droit de recevoir une copie de toutes les donnees que nous detenons sur vous.</p>
+
+      <h3>Comment demander vos donnees</h3>
+      <ol class="steps">
+        <li>
+          <strong>Via l'application</strong><br>
+          Allez dans Parametres > Confidentialite > Telecharger mes donnees
+        </li>
+        <li>
+          <strong>Par email</strong><br>
+          Envoyez une demande via notre page <a href="contact.html">Contact</a> en precisant "Demande de portabilite des donnees"
+        </li>
+      </ol>
+
+      <h3>Delai de traitement</h3>
+      <p>Nous traiterons votre demande dans un delai maximum de 30 jours. Vous recevrez vos donnees dans un format structure et lisible (JSON ou CSV).</p>
+
+      <div class="alert alert-info">
+        <strong>Contenu du fichier :</strong> Vous recevrez l'ensemble de vos donnees personnelles, y compris votre profil, vos voyages, vos messages et vos parametres.
+      </div>
+    </section>
+
+    <section id="modifier" class="content-section">
+      <h2>Modifier vos informations</h2>
+      <p>Vous pouvez modifier la plupart de vos informations directement dans l'application.</p>
+
+      <h3>Depuis l'application</h3>
+      <ul>
+        <li><strong>Photo de profil :</strong> Profil > Modifier > Photo</li>
+        <li><strong>Informations personnelles :</strong> Profil > Modifier</li>
+        <li><strong>Biographie et interets :</strong> Profil > Modifier</li>
+        <li><strong>Email :</strong> Parametres > Compte > Email</li>
+        <li><strong>Mot de passe :</strong> Parametres > Compte > Mot de passe</li>
+      </ul>
+
+      <h3>Informations non modifiables</h3>
+      <p>Certaines informations ne peuvent pas etre modifiees directement :</p>
+      <ul>
+        <li><strong>Date de naissance :</strong> Contactez-nous si une erreur a ete commise</li>
+        <li><strong>Methode de connexion :</strong> Une fois choisie, elle ne peut pas etre changee</li>
+      </ul>
+
+      <div class="alert alert-warning">
+        <strong>Note :</strong> Si vous avez besoin de modifier des informations non accessibles dans l'application, <a href="contact.html">contactez-nous</a>.
+      </div>
+    </section>
+
+    <section id="delete" class="content-section">
+      <h2>Supprimer votre compte</h2>
+      <p>Vous pouvez supprimer definitivement votre compte Vibe a tout moment.</p>
+
+      <div class="alert alert-danger">
+        <strong>Attention :</strong> La suppression de compte est irreversible. Toutes vos donnees seront definitivement effacees et ne pourront pas etre recuperees.
+      </div>
+
+      <h3>Methode 1 : Depuis l'application</h3>
+      <ol class="steps">
+        <li>
+          <strong>Ouvrez les parametres</strong><br>
+          Appuyez sur votre profil puis sur l'icone des parametres (roue dentee)
+        </li>
+        <li>
+          <strong>Accedez a la section Compte</strong><br>
+          Selectionnez "Compte" ou "Mon compte"
+        </li>
+        <li>
+          <strong>Selectionnez "Supprimer mon compte"</strong><br>
+          Cette option se trouve generalement en bas de la page
+        </li>
+        <li>
+          <strong>Confirmez votre identite</strong><br>
+          Entrez votre mot de passe pour confirmer
+        </li>
+        <li>
+          <strong>Confirmez la suppression</strong><br>
+          Lisez les informations et confirmez que vous souhaitez supprimer votre compte
+        </li>
+      </ol>
+
+      <h3>Methode 2 : Par email</h3>
+      <p>Si vous ne pouvez pas acceder a l'application, vous pouvez demander la suppression par email :</p>
+      <ol class="steps">
+        <li>
+          <strong>Rendez-vous sur la page Contact</strong><br>
+          <a href="contact.html">Cliquez ici pour acceder au formulaire de contact</a>
+        </li>
+        <li>
+          <strong>Selectionnez "Suppression de compte"</strong><br>
+          Choisissez cette option dans le menu deroulant
+        </li>
+        <li>
+          <strong>Fournissez les informations necessaires</strong><br>
+          Indiquez l'email associe a votre compte pour verification
+        </li>
+        <li>
+          <strong>Envoyez la demande</strong><br>
+          Nous traiterons votre demande dans un delai de 30 jours maximum
+        </li>
+      </ol>
+
+      <div class="alert alert-info">
+        <strong>Verification d'identite :</strong> Pour proteger votre compte contre les demandes frauduleuses, nous pouvons vous demander de verifier votre identite avant de proceder a la suppression.
+      </div>
+    </section>
+
+    <section id="consequences" class="content-section">
+      <h2>Consequences de la suppression</h2>
+      <p>Voici ce qui se passe lorsque vous supprimez votre compte :</p>
+
+      <h3>Donnees supprimees immediatement</h3>
+      <ul>
+        <li>Votre profil (nom, photos, biographie)</li>
+        <li>Vos preferences et parametres</li>
+        <li>Vos voyages publies</li>
+        <li>Vos demandes de contact en attente</li>
+        <li>Votre visibilite sur la carte</li>
+      </ul>
+
+      <h3>Donnees supprimees sous 30 jours</h3>
+      <ul>
+        <li>Vos messages dans les conversations</li>
+        <li>Vos donnees de connexion</li>
+        <li>Vos logs d'activite</li>
+        <li>Vos photos stockees</li>
+      </ul>
+
+      <h3>Donnees conservees pour raisons legales</h3>
+      <p>Certaines donnees peuvent etre conservees plus longtemps pour des raisons legales :</p>
+      <ul>
+        <li><strong>Signalements :</strong> Les signalements que vous avez effectues ou recus peuvent etre conserves jusqu'a 3 ans</li>
+        <li><strong>Donnees de facturation :</strong> Si vous avez effectue des achats (conservees selon les obligations legales)</li>
+        <li><strong>Donnees anonymisees :</strong> Des statistiques anonymes peuvent etre conservees</li>
+      </ul>
+
+      <h3>Ce que vous perdez</h3>
+      <div class="alert alert-warning">
+        <ul>
+          <li>Acces a toutes vos conversations</li>
+          <li>Vos connexions avec d'autres voyageurs</li>
+          <li>Votre historique de voyages</li>
+          <li>Toute donnee associee a votre compte</li>
+        </ul>
+      </div>
+
+      <h3>Creer un nouveau compte</h3>
+      <p>Apres suppression, vous pouvez creer un nouveau compte avec la meme adresse email. Cependant :</p>
+      <ul>
+        <li>Aucune donnee de l'ancien compte ne sera recuperee</li>
+        <li>Vous devrez recreer votre profil de zero</li>
+        <li>Vos anciennes connexions ne seront pas restaurees</li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>Besoin d'aide ?</h2>
+      <p>Si vous avez des questions concernant la gestion de votre compte ou de vos donnees, n'hesitez pas a nous contacter.</p>
+      <a href="contact.html" class="btn btn-primary">Nous contacter</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Vibe</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="guide.html">Guide d'utilisation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Conditions d'utilisation</a></li>
+          <li><a href="privacy.html">Politique de confidentialite</a></li>
+          <li><a href="account.html">Gestion des donnees</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="account.html#delete">Supprimer mon compte</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Vibe. Tous droits reserves.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" id="backToTop">↑</a>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('backToTop');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>

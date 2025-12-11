@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact the Vibe team - Support, questions, reports">
+  <title>Contact | Vibe</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/png" href="../assets/images/vibe-icon.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="../assets/images/logo3.png" alt="Vibe Logo">
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guide.html">Guide</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+        <div class="lang-selector">
+          <a href="contact.html" class="active">EN</a>
+          <a href="../fr/contact.html">FR</a>
+        </div>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p>Our team is here to help you. Don't hesitate to contact us with any questions.</p>
+  </section>
+
+  <main>
+    <section class="content-section">
+      <h2>How can we help you?</h2>
+      <p>Select the topic that best matches your request for a quick response.</p>
+    </section>
+
+    <section class="feature-grid">
+      <div class="card">
+        <div class="card-icon">❓</div>
+        <h3>General Questions</h3>
+        <p>Questions about Vibe, its features or how to use it?</p>
+        <p><strong>Email:</strong> support@vibe-travel.app</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🔧</div>
+        <h3>Technical Support</h3>
+        <p>Technical problem, bug or app malfunction?</p>
+        <p><strong>Email:</strong> tech@vibe-travel.app</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h3>Privacy & Data</h3>
+        <p>Questions about your personal data, GDPR request?</p>
+        <p><strong>Email:</strong> privacy@vibe-travel.app</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">⚠️</div>
+        <h3>Urgent Report</h3>
+        <p>Dangerous or illegal behavior to report urgently?</p>
+        <p><strong>Email:</strong> safety@vibe-travel.app</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Contact Form</h2>
+      <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+
+      <div class="card" style="margin-top: 2rem;">
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div style="margin-bottom: 1.5rem;">
+            <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-primary);">Subject of your request *</label>
+            <select id="subject" name="subject" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 1rem;">
+              <option value="">Select a subject</option>
+              <option value="general">General question</option>
+              <option value="technical">Technical problem</option>
+              <option value="account">Account management</option>
+              <option value="delete">Account deletion</option>
+              <option value="data">GDPR request (personal data)</option>
+              <option value="report">Report a user</option>
+              <option value="partnership">Partnership</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-primary);">Your email *</label>
+            <input type="email" id="email" name="email" required placeholder="your@email.com" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 1rem;">
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-primary);">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Your name (optional)" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 1rem;">
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-primary);">Your message *</label>
+            <textarea id="message" name="message" required rows="6" placeholder="Describe your request in detail..." style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 1rem; resize: vertical;"></textarea>
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label style="display: flex; align-items: flex-start; gap: 0.5rem; cursor: pointer;">
+              <input type="checkbox" id="consent" name="consent" required style="margin-top: 0.25rem;">
+              <span style="font-size: 0.9rem; color: var(--text-secondary);">I agree that my data will be used to process my request in accordance with the <a href="privacy.html">Privacy Policy</a>. *</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Send message</button>
+        </form>
+
+        <div id="formSuccess" style="display: none; text-align: center; padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
+          <h3 style="color: var(--success);">Message sent!</h3>
+          <p>Thank you for your message. We will get back to you as soon as possible.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Response Times</h2>
+      <div class="feature-grid">
+        <div class="card">
+          <h3>General Questions</h3>
+          <p>Response within <strong>48-72 hours</strong> (business days)</p>
+        </div>
+        <div class="card">
+          <h3>Technical Support</h3>
+          <p>Response within <strong>24-48 hours</strong> (business days)</p>
+        </div>
+        <div class="card">
+          <h3>GDPR Requests</h3>
+          <p>Processing within <strong>30 days</strong> maximum</p>
+        </div>
+        <div class="card">
+          <h3>Urgent Reports</h3>
+          <p>Processing within <strong>24 hours</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Before Contacting Us</h2>
+      <p>You might find the answer to your question in our resources:</p>
+      <ul>
+        <li><a href="faq.html">FAQ - Frequently Asked Questions</a></li>
+        <li><a href="guide.html">User Guide</a></li>
+        <li><a href="account.html">Account and Data Management</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="terms.html">Terms of Service</a></li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>Social Media</h2>
+      <p>Follow us for the latest news:</p>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+        <a href="#" class="btn btn-outline">Instagram</a>
+        <a href="#" class="btn btn-outline">Twitter</a>
+        <a href="#" class="btn btn-outline">Facebook</a>
+      </div>
+      <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-secondary);"><em>Note: Social media is not intended for customer support. For any requests, please use the form above.</em></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Vibe</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guide.html">User Guide</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="account.html">Data Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="account.html#delete">Delete Account</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Vibe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" id="backToTop">↑</a>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('backToTop');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    function handleSubmit(event) {
+      event.preventDefault();
+
+      const formData = new FormData(event.target);
+      const subject = formData.get('subject');
+      const email = formData.get('email');
+      const name = formData.get('name');
+      const message = formData.get('message');
+
+      const mailtoSubject = encodeURIComponent(`[Vibe Contact] ${subject}`);
+      const mailtoBody = encodeURIComponent(`Name: ${name || 'Not specified'}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+      let toEmail = 'support@vibe-travel.app';
+      if (subject === 'technical') toEmail = 'tech@vibe-travel.app';
+      if (subject === 'data' || subject === 'delete') toEmail = 'privacy@vibe-travel.app';
+      if (subject === 'report') toEmail = 'safety@vibe-travel.app';
+
+      window.location.href = `mailto:${toEmail}?subject=${mailtoSubject}&body=${mailtoBody}`;
+
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

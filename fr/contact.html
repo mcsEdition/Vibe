@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contactez l'equipe Vibe - Support, questions, signalements">
+  <title>Contact | Vibe</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/png" href="../assets/images/vibe-icon.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="../assets/images/logo3.png" alt="Vibe Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="guide.html">Guide</a></li>
+        <li><a href="privacy.html">Confidentialite</a></li>
+        <li><a href="terms.html">CGU</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Contactez-nous</h1>
+    <p>Notre equipe est la pour vous aider. N'hesitez pas a nous contacter pour toute question.</p>
+  </section>
+
+  <main>
+    <section class="content-section">
+      <h2>Comment pouvons-nous vous aider ?</h2>
+      <p>Selectionnez le sujet qui correspond le mieux a votre demande pour obtenir une reponse rapide.</p>
+    </section>
+
+    <section class="feature-grid">
+      <div class="card">
+        <div class="card-icon">❓</div>
+        <h3>Questions generales</h3>
+        <p>Des questions sur Vibe, ses fonctionnalites ou son utilisation ?</p>
+        <p><strong>Email :</strong> support@vibe-travel.app</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🔧</div>
+        <h3>Support technique</h3>
+        <p>Probleme technique, bug ou dysfonctionnement de l'application ?</p>
+        <p><strong>Email :</strong> tech@vibe-travel.app</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h3>Confidentialite & Donnees</h3>
+        <p>Questions sur vos donnees personnelles, demande RGPD ?</p>
+        <p><strong>Email :</strong> privacy@vibe-travel.app</p>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">⚠️</div>
+        <h3>Signalement urgent</h3>
+        <p>Comportement dangereux ou illegal a signaler en urgence ?</p>
+        <p><strong>Email :</strong> safety@vibe-travel.app</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Formulaire de contact</h2>
+      <p>Remplissez le formulaire ci-dessous et nous vous repondrons dans les plus brefs delais.</p>
+
+      <div class="card" style="margin-top: 2rem;">
+        <form id="contactForm" onsubmit="handleSubmit(event)">
+          <div style="margin-bottom: 1.5rem;">
+            <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-primary);">Sujet de votre demande *</label>
+            <select id="subject" name="subject" required style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 1rem;">
+              <option value="">Selectionnez un sujet</option>
+              <option value="general">Question generale</option>
+              <option value="technical">Probleme technique</option>
+              <option value="account">Gestion de compte</option>
+              <option value="delete">Suppression de compte</option>
+              <option value="data">Demande RGPD (donnees personnelles)</option>
+              <option value="report">Signalement d'un utilisateur</option>
+              <option value="partnership">Partenariat</option>
+              <option value="other">Autre</option>
+            </select>
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-primary);">Votre email *</label>
+            <input type="email" id="email" name="email" required placeholder="votre@email.com" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 1rem;">
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-primary);">Votre nom</label>
+            <input type="text" id="name" name="name" placeholder="Votre nom (optionnel)" style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 1rem;">
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: var(--text-primary);">Votre message *</label>
+            <textarea id="message" name="message" required rows="6" placeholder="Decrivez votre demande en detail..." style="width: 100%; padding: 0.75rem; border: 1px solid var(--border); border-radius: var(--radius-sm); font-size: 1rem; resize: vertical;"></textarea>
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <label style="display: flex; align-items: flex-start; gap: 0.5rem; cursor: pointer;">
+              <input type="checkbox" id="consent" name="consent" required style="margin-top: 0.25rem;">
+              <span style="font-size: 0.9rem; color: var(--text-secondary);">J'accepte que mes donnees soient utilisees pour traiter ma demande conformement a la <a href="privacy.html">Politique de confidentialite</a>. *</span>
+            </label>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Envoyer le message</button>
+        </form>
+
+        <div id="formSuccess" style="display: none; text-align: center; padding: 2rem;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">✅</div>
+          <h3 style="color: var(--success);">Message envoye !</h3>
+          <p>Merci pour votre message. Nous vous repondrons dans les plus brefs delais.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Delais de reponse</h2>
+      <div class="feature-grid">
+        <div class="card">
+          <h3>Questions generales</h3>
+          <p>Reponse sous <strong>48-72 heures</strong> (jours ouvres)</p>
+        </div>
+        <div class="card">
+          <h3>Support technique</h3>
+          <p>Reponse sous <strong>24-48 heures</strong> (jours ouvres)</p>
+        </div>
+        <div class="card">
+          <h3>Demandes RGPD</h3>
+          <p>Traitement sous <strong>30 jours</strong> maximum</p>
+        </div>
+        <div class="card">
+          <h3>Signalements urgents</h3>
+          <p>Traitement sous <strong>24 heures</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Avant de nous contacter</h2>
+      <p>Vous trouverez peut-etre la reponse a votre question dans nos ressources :</p>
+      <ul>
+        <li><a href="faq.html">FAQ - Questions frequentes</a></li>
+        <li><a href="guide.html">Guide d'utilisation</a></li>
+        <li><a href="account.html">Gestion du compte et des donnees</a></li>
+        <li><a href="privacy.html">Politique de confidentialite</a></li>
+        <li><a href="terms.html">Conditions d'utilisation</a></li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>Reseaux sociaux</h2>
+      <p>Suivez-nous pour les dernieres actualites :</p>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 1rem;">
+        <a href="#" class="btn btn-outline">Instagram</a>
+        <a href="#" class="btn btn-outline">Twitter</a>
+        <a href="#" class="btn btn-outline">Facebook</a>
+      </div>
+      <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-secondary);"><em>Note : Les reseaux sociaux ne sont pas destines au support client. Pour toute demande, utilisez le formulaire ci-dessus.</em></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Vibe</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="guide.html">Guide d'utilisation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Conditions d'utilisation</a></li>
+          <li><a href="privacy.html">Politique de confidentialite</a></li>
+          <li><a href="account.html">Gestion des donnees</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="account.html#delete">Supprimer mon compte</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Vibe. Tous droits reserves.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" id="backToTop">↑</a>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('backToTop');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+
+    function handleSubmit(event) {
+      event.preventDefault();
+
+      // Get form data
+      const formData = new FormData(event.target);
+      const subject = formData.get('subject');
+      const email = formData.get('email');
+      const name = formData.get('name');
+      const message = formData.get('message');
+
+      // Build mailto link
+      const mailtoSubject = encodeURIComponent(`[Vibe Contact] ${subject}`);
+      const mailtoBody = encodeURIComponent(`Nom: ${name || 'Non specifie'}\nEmail: ${email}\n\nMessage:\n${message}`);
+
+      // Determine email based on subject
+      let toEmail = 'support@vibe-travel.app';
+      if (subject === 'technical') toEmail = 'tech@vibe-travel.app';
+      if (subject === 'data' || subject === 'delete') toEmail = 'privacy@vibe-travel.app';
+      if (subject === 'report') toEmail = 'safety@vibe-travel.app';
+
+      // Open mailto
+      window.location.href = `mailto:${toEmail}?subject=${mailtoSubject}&body=${mailtoBody}`;
+
+      // Show success message
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    }
+  </script>
+</body>
+</html>

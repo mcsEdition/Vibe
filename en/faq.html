@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vibe FAQ - Frequently asked questions about the travel app">
+  <title>FAQ - Frequently Asked Questions | Vibe</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/png" href="../assets/images/vibe-icon.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="../assets/images/logo3.png" alt="Vibe Logo">
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guide.html">Guide</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="lang-selector">
+          <a href="faq.html" class="active">EN</a>
+          <a href="../fr/faq.html">FR</a>
+        </div>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Frequently Asked Questions</h1>
+    <p>Find quick answers to your questions about Vibe.</p>
+  </section>
+
+  <main>
+    <section class="content-section">
+      <h2>Account and Registration</h2>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            How do I create a Vibe account?
+          </div>
+          <div class="accordion-content">
+            <p>You can create an account in three ways:</p>
+            <ul>
+              <li><strong>Email:</strong> Enter your email and create a password</li>
+              <li><strong>Google:</strong> Sign in with your Google account in one click</li>
+              <li><strong>Apple:</strong> Use Sign in with Apple (iOS only)</li>
+            </ul>
+            <p>After registration, you'll need to complete your profile with basic information.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Is the app free?
+          </div>
+          <div class="accordion-content">
+            <p>Yes, Vibe is completely free! All main features are accessible at no cost:</p>
+            <ul>
+              <li>Profile creation</li>
+              <li>Map browsing</li>
+              <li>Trip creation</li>
+              <li>Messaging</li>
+              <li>Flash Meetups</li>
+            </ul>
+            <p>We may introduce premium features in the future, but core features will remain free.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            How old do I need to be to use Vibe?
+          </div>
+          <div class="accordion-content">
+            <p>You must be <strong>at least 18 years old</strong> to use Vibe. This restriction is in place to ensure the safety of our community of adult travelers.</p>
+            <p>Your date of birth is verified during registration and cannot be changed afterwards.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            I forgot my password, what should I do?
+          </div>
+          <div class="accordion-content">
+            <ol>
+              <li>On the login screen, tap "Forgot password"</li>
+              <li>Enter the email associated with your account</li>
+              <li>Check your inbox (and spam folder)</li>
+              <li>Click the reset link</li>
+              <li>Create a new password</li>
+            </ol>
+            <p>The reset link expires after 24 hours.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            How do I delete my account?
+          </div>
+          <div class="accordion-content">
+            <p>You can delete your account in two ways:</p>
+            <ol>
+              <li><strong>In the app:</strong> Settings > Account > Delete my account</li>
+              <li><strong>By email:</strong> Contact us via the <a href="contact.html">Contact</a> page</li>
+            </ol>
+            <p>For more details, see our <a href="account.html#delete">Account deletion</a> page.</p>
+            <p><strong>Warning:</strong> This action is irreversible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Using the App</h2>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            How does the map work?
+          </div>
+          <div class="accordion-content">
+            <p>The map displays travelers as "pins":</p>
+            <ul>
+              <li><strong>Green pin:</strong> The traveler is currently at this location ("Here Now")</li>
+              <li><strong>Blue pin:</strong> The traveler plans to go there ("Coming Soon")</li>
+            </ul>
+            <p>Tap on a pin to see a profile preview, then "View profile" for more details.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            How do I create a trip?
+          </div>
+          <div class="accordion-content">
+            <ol>
+              <li>Tap the "+" or "Create" button</li>
+              <li>Select "New trip"</li>
+              <li>Choose your destination</li>
+              <li>Set arrival and departure dates</li>
+              <li>Add optional details (budget, activities...)</li>
+              <li>Publish your trip</li>
+            </ol>
+            <p>Your trip will be visible on the map and in the Discover section.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            What is a Flash Meetup?
+          </div>
+          <div class="accordion-content">
+            <p>A Flash Meetup is a spontaneous gathering organized by a traveler. It's ideal for:</p>
+            <ul>
+              <li>Sharing a meal</li>
+              <li>Visiting a place together</li>
+              <li>Doing an activity (hiking, tour, etc.)</li>
+              <li>Simply chatting over coffee</li>
+            </ul>
+            <p>Flash Meetups are visible on the map and in Discover. You can create or join them anytime.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            How do I contact another traveler?
+          </div>
+          <div class="accordion-content">
+            <ol>
+              <li>Visit the traveler's profile</li>
+              <li>Tap "Vibe" or "Send a message"</li>
+              <li>Wait for the user to accept your request</li>
+              <li>Once accepted, you can exchange messages</li>
+            </ol>
+            <p>You can see your conversations in the "Messages" tab.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Is my location shared all the time?
+          </div>
+          <div class="accordion-content">
+            <p>No, you have full control over location sharing:</p>
+            <ul>
+              <li>Location is only used when you create a trip or enable "I'm here"</li>
+              <li>You can disable sharing anytime in settings</li>
+              <li>Your exact position is never shared, only the city/area</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Safety and Privacy</h2>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            How do I block a user?
+          </div>
+          <div class="accordion-content">
+            <ol>
+              <li>Go to the user's profile or conversation</li>
+              <li>Tap the menu (three dots in the top right)</li>
+              <li>Select "Block"</li>
+              <li>Confirm the block</li>
+            </ol>
+            <p>The blocked user will no longer be able to contact you, see your profile or your trips. This action is permanent.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            How do I report inappropriate behavior?
+          </div>
+          <div class="accordion-content">
+            <ol>
+              <li>Go to the profile or conversation</li>
+              <li>Tap the menu (three dots)</li>
+              <li>Select "Report"</li>
+              <li>Choose the reason for reporting</li>
+              <li>Add details if necessary</li>
+            </ol>
+            <p>Our team reviews each report within 24-48 hours and takes appropriate action.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Are my messages secure?
+          </div>
+          <div class="accordion-content">
+            <p>Yes, we take your communication security seriously:</p>
+            <ul>
+              <li>Messages are transmitted via secure connection (HTTPS/TLS)</li>
+              <li>Data is stored on secure servers</li>
+              <li>Only you and your correspondent can read your messages</li>
+              <li>Our team only accesses messages in case of a report</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            How can I protect my personal data?
+          </div>
+          <div class="accordion-content">
+            <p>Here are some tips:</p>
+            <ul>
+              <li>Use a strong, unique password</li>
+              <li>Never share your login credentials</li>
+              <li>Don't share sensitive information (banking, exact address) in messages</li>
+              <li>Regularly check your privacy settings</li>
+            </ul>
+            <p>For more information, see our <a href="privacy.html">Privacy Policy</a>.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            What information is visible to others?
+          </div>
+          <div class="accordion-content">
+            <p><strong>Visible to all users:</strong></p>
+            <ul>
+              <li>First name</li>
+              <li>Profile photo</li>
+              <li>Age</li>
+              <li>Nationality</li>
+              <li>Biography and interests</li>
+              <li>Published trips</li>
+            </ul>
+            <p><strong>Never visible:</strong></p>
+            <ul>
+              <li>Email</li>
+              <li>Password</li>
+              <li>Exact date of birth</li>
+              <li>Exact GPS position</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Technical Issues</h2>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            The app won't load, what should I do?
+          </div>
+          <div class="accordion-content">
+            <p>Try these steps in order:</p>
+            <ol>
+              <li>Check your internet connection</li>
+              <li>Completely close the app and reopen it</li>
+              <li>Restart your phone</li>
+              <li>Check if an update is available</li>
+              <li>Uninstall and reinstall the app</li>
+            </ol>
+            <p>If the problem persists, <a href="contact.html">contact our support</a>.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            I'm not receiving notifications
+          </div>
+          <div class="accordion-content">
+            <p>Check the following:</p>
+            <ol>
+              <li><strong>Phone settings:</strong> Make sure notifications are enabled for Vibe in your device settings</li>
+              <li><strong>App settings:</strong> Check that notifications are enabled in Settings > Notifications</li>
+              <li><strong>Do Not Disturb mode:</strong> Temporarily disable it to test</li>
+              <li><strong>Battery saver:</strong> Exclude Vibe from battery optimization</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            My photos won't upload
+          </div>
+          <div class="accordion-content">
+            <p>Check the following:</p>
+            <ul>
+              <li><strong>Connection:</strong> A good WiFi connection is recommended</li>
+              <li><strong>File size:</strong> Very large photos may fail</li>
+              <li><strong>Permissions:</strong> Make sure Vibe has access to your photos</li>
+              <li><strong>Format:</strong> Only JPG and PNG formats are accepted</li>
+            </ul>
+            <p>Try reducing the photo size or using a different image.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            The map isn't displaying correctly
+          </div>
+          <div class="accordion-content">
+            <p>Possible solutions:</p>
+            <ul>
+              <li>Check your internet connection</li>
+              <li>Grant location permissions to the app</li>
+              <li>Restart the app</li>
+              <li>Update the app to the latest version</li>
+              <li>Clear the app cache (Settings > Apps > Vibe > Clear cache)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Didn't find your answer?</h2>
+      <p>Our team is here to help!</p>
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Vibe</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guide.html">User Guide</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="account.html">Data Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="account.html#delete">Delete Account</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Vibe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" id="backToTop">↑</a>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+
+    function toggleAccordion(header) {
+      const item = header.parentElement;
+      const wasActive = item.classList.contains('active');
+
+      document.querySelectorAll('.accordion-item').forEach(i => {
+        i.classList.remove('active');
+      });
+
+      if (!wasActive) {
+        item.classList.add('active');
+      }
+    }
+
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('backToTop');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>

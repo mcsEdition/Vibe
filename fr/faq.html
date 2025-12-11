@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FAQ Vibe - Questions frequemment posees sur l'application de voyage">
+  <title>FAQ - Questions frequentes | Vibe</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/png" href="../assets/images/vibe-icon.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="../assets/images/logo3.png" alt="Vibe Logo">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="guide.html">Guide</a></li>
+        <li><a href="privacy.html">Confidentialite</a></li>
+        <li><a href="terms.html">CGU</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Questions frequentes</h1>
+    <p>Trouvez rapidement les reponses a vos questions sur Vibe.</p>
+  </section>
+
+  <main>
+    <section class="content-section">
+      <h2>Compte et inscription</h2>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Comment creer un compte Vibe ?
+          </div>
+          <div class="accordion-content">
+            <p>Vous pouvez creer un compte de trois façons :</p>
+            <ul>
+              <li><strong>Email :</strong> Entrez votre email et creez un mot de passe</li>
+              <li><strong>Google :</strong> Connectez-vous avec votre compte Google en un clic</li>
+              <li><strong>Apple :</strong> Utilisez Sign in with Apple (iOS uniquement)</li>
+            </ul>
+            <p>Apres l'inscription, vous devrez completer votre profil avec vos informations de base.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            L'application est-elle gratuite ?
+          </div>
+          <div class="accordion-content">
+            <p>Oui, Vibe est entierement gratuite ! Toutes les fonctionnalites principales sont accessibles sans frais :</p>
+            <ul>
+              <li>Creation de profil</li>
+              <li>Consultation de la carte</li>
+              <li>Creation de voyages</li>
+              <li>Messagerie</li>
+              <li>Flash Meetups</li>
+            </ul>
+            <p>Nous pourrions introduire des fonctionnalites premium dans le futur, mais les fonctionnalites de base resteront gratuites.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Quel age faut-il avoir pour utiliser Vibe ?
+          </div>
+          <div class="accordion-content">
+            <p>Vous devez avoir <strong>au moins 18 ans</strong> pour utiliser Vibe. Cette restriction est en place pour assurer la securite de notre communaute de voyageurs adultes.</p>
+            <p>Votre date de naissance est verifiee lors de l'inscription et ne peut pas etre modifiee par la suite.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            J'ai oublie mon mot de passe, que faire ?
+          </div>
+          <div class="accordion-content">
+            <ol>
+              <li>Sur l'ecran de connexion, appuyez sur "Mot de passe oublie"</li>
+              <li>Entrez l'email associe a votre compte</li>
+              <li>Verifiez votre boite mail (et les spams)</li>
+              <li>Cliquez sur le lien de reinitialisation</li>
+              <li>Creez un nouveau mot de passe</li>
+            </ol>
+            <p>Le lien de reinitialisation expire apres 24 heures.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Comment supprimer mon compte ?
+          </div>
+          <div class="accordion-content">
+            <p>Vous pouvez supprimer votre compte de deux façons :</p>
+            <ol>
+              <li><strong>Dans l'application :</strong> Parametres > Compte > Supprimer mon compte</li>
+              <li><strong>Par email :</strong> Contactez-nous via la page <a href="contact.html">Contact</a></li>
+            </ol>
+            <p>Pour plus de details, consultez notre page <a href="account.html#delete">Suppression de compte</a>.</p>
+            <p><strong>Attention :</strong> Cette action est irreversible.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Utilisation de l'application</h2>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Comment fonctionne la carte ?
+          </div>
+          <div class="accordion-content">
+            <p>La carte affiche les voyageurs sous forme de "pins" :</p>
+            <ul>
+              <li><strong>Pin vert :</strong> Le voyageur est actuellement a cet endroit ("Ici maintenant")</li>
+              <li><strong>Pin bleu :</strong> Le voyageur prevoit de s'y rendre ("Bientot la")</li>
+            </ul>
+            <p>Appuyez sur un pin pour voir un apercu du profil, puis sur "Voir le profil" pour plus de details.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Comment creer un voyage ?
+          </div>
+          <div class="accordion-content">
+            <ol>
+              <li>Appuyez sur le bouton "+" ou "Creer"</li>
+              <li>Selectionnez "Nouveau voyage"</li>
+              <li>Choisissez votre destination</li>
+              <li>Definissez les dates d'arrivee et de depart</li>
+              <li>Ajoutez des details optionnels (budget, activites...)</li>
+              <li>Publiez votre voyage</li>
+            </ol>
+            <p>Votre voyage sera visible sur la carte et dans la section Discover.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Qu'est-ce qu'un Flash Meetup ?
+          </div>
+          <div class="accordion-content">
+            <p>Un Flash Meetup est une rencontre spontanee organisee par un voyageur. C'est ideal pour :</p>
+            <ul>
+              <li>Partager un repas</li>
+              <li>Visiter un lieu ensemble</li>
+              <li>Faire une activite (randonnee, visite, etc.)</li>
+              <li>Simplement discuter autour d'un cafe</li>
+            </ul>
+            <p>Les Flash Meetups sont visibles sur la carte et dans Discover. Vous pouvez en creer ou en rejoindre a tout moment.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Comment contacter un autre voyageur ?
+          </div>
+          <div class="accordion-content">
+            <ol>
+              <li>Visitez le profil du voyageur</li>
+              <li>Appuyez sur "Vibe" ou "Envoyer un message"</li>
+              <li>Attendez que l'utilisateur accepte votre demande</li>
+              <li>Une fois accepte, vous pouvez echanger des messages</li>
+            </ol>
+            <p>Vous pouvez voir vos conversations dans l'onglet "Messages".</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Ma localisation est-elle partagee en permanence ?
+          </div>
+          <div class="accordion-content">
+            <p>Non, vous controlez entierement le partage de votre localisation :</p>
+            <ul>
+              <li>La localisation n'est utilisee que lorsque vous creez un voyage ou activez "Je suis ici"</li>
+              <li>Vous pouvez desactiver le partage a tout moment dans les parametres</li>
+              <li>Votre position exacte n'est jamais partagee, seulement la ville/zone</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Securite et confidentialite</h2>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Comment bloquer un utilisateur ?
+          </div>
+          <div class="accordion-content">
+            <ol>
+              <li>Accedez au profil de l'utilisateur ou a la conversation</li>
+              <li>Appuyez sur le menu (trois points en haut a droite)</li>
+              <li>Selectionnez "Bloquer"</li>
+              <li>Confirmez le blocage</li>
+            </ol>
+            <p>L'utilisateur bloque ne pourra plus vous contacter, voir votre profil ou vos voyages. Cette action est definitive.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Comment signaler un comportement inapproprie ?
+          </div>
+          <div class="accordion-content">
+            <ol>
+              <li>Accedez au profil ou a la conversation</li>
+              <li>Appuyez sur le menu (trois points)</li>
+              <li>Selectionnez "Signaler"</li>
+              <li>Choisissez la raison du signalement</li>
+              <li>Ajoutez des details si necessaire</li>
+            </ol>
+            <p>Notre equipe examine chaque signalement sous 24-48 heures et prend les mesures appropriees.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Mes messages sont-ils securises ?
+          </div>
+          <div class="accordion-content">
+            <p>Oui, nous prenons la securite de vos communications au serieux :</p>
+            <ul>
+              <li>Les messages sont transmis via connexion securisee (HTTPS/TLS)</li>
+              <li>Les donnees sont stockees sur des serveurs securises</li>
+              <li>Seuls vous et votre correspondant pouvez lire vos messages</li>
+              <li>Notre equipe n'accede aux messages qu'en cas de signalement</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Comment proteger mes donnees personnelles ?
+          </div>
+          <div class="accordion-content">
+            <p>Voici quelques conseils :</p>
+            <ul>
+              <li>Utilisez un mot de passe fort et unique</li>
+              <li>Ne partagez jamais vos identifiants de connexion</li>
+              <li>Ne communiquez pas d'informations sensibles (bancaires, adresse exacte) dans les messages</li>
+              <li>Verifiez regulierement les parametres de confidentialite</li>
+            </ul>
+            <p>Pour plus d'informations, consultez notre <a href="privacy.html">Politique de confidentialite</a>.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Quelles informations sont visibles par les autres ?
+          </div>
+          <div class="accordion-content">
+            <p><strong>Visible par tous les utilisateurs :</strong></p>
+            <ul>
+              <li>Prenom</li>
+              <li>Photo de profil</li>
+              <li>Age</li>
+              <li>Nationalite</li>
+              <li>Biographie et interets</li>
+              <li>Voyages publies</li>
+            </ul>
+            <p><strong>Jamais visible :</strong></p>
+            <ul>
+              <li>Email</li>
+              <li>Mot de passe</li>
+              <li>Date de naissance exacte</li>
+              <li>Position GPS exacte</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Problemes techniques</h2>
+
+      <div class="accordion">
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            L'application ne se charge pas, que faire ?
+          </div>
+          <div class="accordion-content">
+            <p>Essayez ces etapes dans l'ordre :</p>
+            <ol>
+              <li>Verifiez votre connexion internet</li>
+              <li>Fermez completement l'application et relancez-la</li>
+              <li>Redemarrez votre telephone</li>
+              <li>Verifiez si une mise a jour est disponible</li>
+              <li>Desinstallez et reinstallez l'application</li>
+            </ol>
+            <p>Si le probleme persiste, <a href="contact.html">contactez notre support</a>.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Je ne recois pas les notifications
+          </div>
+          <div class="accordion-content">
+            <p>Verifiez les points suivants :</p>
+            <ol>
+              <li><strong>Parametres du telephone :</strong> Assurez-vous que les notifications sont activees pour Vibe dans les parametres de votre appareil</li>
+              <li><strong>Parametres de l'app :</strong> Verifiez que les notifications sont activees dans Parametres > Notifications</li>
+              <li><strong>Mode Ne pas deranger :</strong> Desactivez-le temporairement pour tester</li>
+              <li><strong>Economie de batterie :</strong> Excluez Vibe des optimisations de batterie</li>
+            </ol>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            Mes photos ne s'uploadent pas
+          </div>
+          <div class="accordion-content">
+            <p>Verifiez les points suivants :</p>
+            <ul>
+              <li><strong>Connexion :</strong> Une bonne connexion WiFi est recommandee</li>
+              <li><strong>Taille du fichier :</strong> Les photos tres volumineuses peuvent echouer</li>
+              <li><strong>Permissions :</strong> Assurez-vous que Vibe a acces a vos photos</li>
+              <li><strong>Format :</strong> Seuls les formats JPG et PNG sont acceptes</li>
+            </ul>
+            <p>Essayez de reduire la taille de la photo ou d'utiliser une autre image.</p>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <div class="accordion-header" onclick="toggleAccordion(this)">
+            La carte ne s'affiche pas correctement
+          </div>
+          <div class="accordion-content">
+            <p>Solutions possibles :</p>
+            <ul>
+              <li>Verifiez votre connexion internet</li>
+              <li>Accordez les permissions de localisation a l'application</li>
+              <li>Redemarrez l'application</li>
+              <li>Mettez a jour l'application vers la derniere version</li>
+              <li>Videz le cache de l'application (Parametres > Applications > Vibe > Vider le cache)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2>Vous n'avez pas trouve votre reponse ?</h2>
+      <p>Notre equipe est la pour vous aider !</p>
+      <a href="contact.html" class="btn btn-primary">Contactez-nous</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Vibe</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="guide.html">Guide d'utilisation</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Conditions d'utilisation</a></li>
+          <li><a href="privacy.html">Politique de confidentialite</a></li>
+          <li><a href="account.html">Gestion des donnees</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Nous contacter</a></li>
+          <li><a href="account.html#delete">Supprimer mon compte</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Vibe. Tous droits reserves.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" id="backToTop">↑</a>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+
+    function toggleAccordion(header) {
+      const item = header.parentElement;
+      const wasActive = item.classList.contains('active');
+
+      // Close all other items
+      document.querySelectorAll('.accordion-item').forEach(i => {
+        i.classList.remove('active');
+      });
+
+      // Toggle current item
+      if (!wasActive) {
+        item.classList.add('active');
+      }
+    }
+
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('backToTop');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>

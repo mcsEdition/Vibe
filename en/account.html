@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vibe Account Management - Delete account, manage personal data">
+  <title>Account Management | Vibe</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" type="image/png" href="../assets/images/vibe-icon.png">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">
+        <img src="../assets/images/logo3.png" alt="Vibe Logo">
+      </a>
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guide.html">Guide</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="lang-selector">
+          <a href="account.html" class="active">EN</a>
+          <a href="../fr/account.html">FR</a>
+        </div>
+      </div>
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Account Management</h1>
+    <p>Manage your personal data, edit your information or delete your account.</p>
+  </section>
+
+  <main>
+    <div class="toc">
+      <h4>Table of Contents</h4>
+      <ul>
+        <li><a href="#data">Your Personal Data</a></li>
+        <li><a href="#download">Download Your Data</a></li>
+        <li><a href="#edit">Edit Your Information</a></li>
+        <li><a href="#delete">Delete Your Account</a></li>
+        <li><a href="#consequences">Consequences of Deletion</a></li>
+      </ul>
+    </div>
+
+    <section id="data" class="content-section">
+      <h2>Your Personal Data</h2>
+      <p>Vibe collects and stores the following data related to your account:</p>
+
+      <div class="feature-grid">
+        <div class="card">
+          <h3>Account Information</h3>
+          <ul>
+            <li>Email address</li>
+            <li>Password (encrypted)</li>
+            <li>Account creation date</li>
+            <li>Login method</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Profile</h3>
+          <ul>
+            <li>First name</li>
+            <li>Date of birth</li>
+            <li>Nationality</li>
+            <li>Profile photos</li>
+            <li>Biography</li>
+            <li>Interests</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Activity</h3>
+          <ul>
+            <li>Created trips</li>
+            <li>Conversations</li>
+            <li>Sent messages</li>
+            <li>Contact requests</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Technical Data</h3>
+          <ul>
+            <li>Last login</li>
+            <li>Device type</li>
+            <li>Location history</li>
+            <li>Connection logs</li>
+          </ul>
+        </div>
+      </div>
+
+      <p>For more details on data collection and use, see our <a href="privacy.html">Privacy Policy</a>.</p>
+    </section>
+
+    <section id="download" class="content-section">
+      <h2>Download Your Data</h2>
+      <p>Under GDPR, you have the right to receive a copy of all data we hold about you.</p>
+
+      <h3>How to Request Your Data</h3>
+      <ol class="steps">
+        <li>
+          <strong>Via the app</strong><br>
+          Go to Settings > Privacy > Download my data
+        </li>
+        <li>
+          <strong>By email</strong><br>
+          Send a request via our <a href="contact.html">Contact</a> page specifying "Data portability request"
+        </li>
+      </ol>
+
+      <h3>Processing Time</h3>
+      <p>We will process your request within a maximum of 30 days. You will receive your data in a structured, readable format (JSON or CSV).</p>
+
+      <div class="alert alert-info">
+        <strong>File contents:</strong> You will receive all your personal data, including your profile, trips, messages and settings.
+      </div>
+    </section>
+
+    <section id="edit" class="content-section">
+      <h2>Edit Your Information</h2>
+      <p>You can edit most of your information directly in the app.</p>
+
+      <h3>From the App</h3>
+      <ul>
+        <li><strong>Profile photo:</strong> Profile > Edit > Photo</li>
+        <li><strong>Personal information:</strong> Profile > Edit</li>
+        <li><strong>Biography and interests:</strong> Profile > Edit</li>
+        <li><strong>Email:</strong> Settings > Account > Email</li>
+        <li><strong>Password:</strong> Settings > Account > Password</li>
+      </ul>
+
+      <h3>Non-editable Information</h3>
+      <p>Some information cannot be edited directly:</p>
+      <ul>
+        <li><strong>Date of birth:</strong> Contact us if an error was made</li>
+        <li><strong>Login method:</strong> Once chosen, it cannot be changed</li>
+      </ul>
+
+      <div class="alert alert-warning">
+        <strong>Note:</strong> If you need to edit information not accessible in the app, <a href="contact.html">contact us</a>.
+      </div>
+    </section>
+
+    <section id="delete" class="content-section">
+      <h2>Delete Your Account</h2>
+      <p>You can permanently delete your Vibe account at any time.</p>
+
+      <div class="alert alert-danger">
+        <strong>Warning:</strong> Account deletion is irreversible. All your data will be permanently erased and cannot be recovered.
+      </div>
+
+      <h3>Method 1: From the App</h3>
+      <ol class="steps">
+        <li>
+          <strong>Open settings</strong><br>
+          Tap your profile then the settings icon (gear)
+        </li>
+        <li>
+          <strong>Go to Account section</strong><br>
+          Select "Account" or "My account"
+        </li>
+        <li>
+          <strong>Select "Delete my account"</strong><br>
+          This option is usually at the bottom of the page
+        </li>
+        <li>
+          <strong>Confirm your identity</strong><br>
+          Enter your password to confirm
+        </li>
+        <li>
+          <strong>Confirm deletion</strong><br>
+          Read the information and confirm that you want to delete your account
+        </li>
+      </ol>
+
+      <h3>Method 2: By Email</h3>
+      <p>If you cannot access the app, you can request deletion by email:</p>
+      <ol class="steps">
+        <li>
+          <strong>Go to the Contact page</strong><br>
+          <a href="contact.html">Click here to access the contact form</a>
+        </li>
+        <li>
+          <strong>Select "Account deletion"</strong><br>
+          Choose this option from the dropdown menu
+        </li>
+        <li>
+          <strong>Provide necessary information</strong><br>
+          Enter the email associated with your account for verification
+        </li>
+        <li>
+          <strong>Send the request</strong><br>
+          We will process your request within a maximum of 30 days
+        </li>
+      </ol>
+
+      <div class="alert alert-info">
+        <strong>Identity verification:</strong> To protect your account against fraudulent requests, we may ask you to verify your identity before proceeding with deletion.
+      </div>
+    </section>
+
+    <section id="consequences" class="content-section">
+      <h2>Consequences of Deletion</h2>
+      <p>Here's what happens when you delete your account:</p>
+
+      <h3>Data Deleted Immediately</h3>
+      <ul>
+        <li>Your profile (name, photos, biography)</li>
+        <li>Your preferences and settings</li>
+        <li>Your published trips</li>
+        <li>Your pending contact requests</li>
+        <li>Your visibility on the map</li>
+      </ul>
+
+      <h3>Data Deleted Within 30 Days</h3>
+      <ul>
+        <li>Your messages in conversations</li>
+        <li>Your login data</li>
+        <li>Your activity logs</li>
+        <li>Your stored photos</li>
+      </ul>
+
+      <h3>Data Retained for Legal Reasons</h3>
+      <p>Some data may be retained longer for legal reasons:</p>
+      <ul>
+        <li><strong>Reports:</strong> Reports you made or received may be kept for up to 3 years</li>
+        <li><strong>Billing data:</strong> If you made purchases (kept according to legal requirements)</li>
+        <li><strong>Anonymized data:</strong> Anonymous statistics may be retained</li>
+      </ul>
+
+      <h3>What You Lose</h3>
+      <div class="alert alert-warning">
+        <ul>
+          <li>Access to all your conversations</li>
+          <li>Your connections with other travelers</li>
+          <li>Your trip history</li>
+          <li>All data associated with your account</li>
+        </ul>
+      </div>
+
+      <h3>Creating a New Account</h3>
+      <p>After deletion, you can create a new account with the same email address. However:</p>
+      <ul>
+        <li>No data from the old account will be recovered</li>
+        <li>You will need to recreate your profile from scratch</li>
+        <li>Your old connections will not be restored</li>
+      </ul>
+    </section>
+
+    <section class="content-section">
+      <h2>Need Help?</h2>
+      <p>If you have questions about managing your account or data, feel free to contact us.</p>
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>Vibe</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="guide.html">User Guide</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="account.html">Data Management</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="account.html#delete">Delete Account</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Vibe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top" id="backToTop">↑</a>
+
+  <script>
+    function toggleMenu() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    }
+
+    window.addEventListener('scroll', function() {
+      const backToTop = document.getElementById('backToTop');
+      if (window.pageYOffset > 300) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
+    });
+  </script>
+</body>
+</html>
