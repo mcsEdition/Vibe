@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vibe - Connect with travelers worldwide">
+  <title>Vibe - Travel App</title>
+  <link rel="icon" type="image/png" href="assets/images/vibe-icon.png">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    // Detect browser language and redirect
+    (function() {
+      var lang = navigator.language || navigator.userLanguage;
+      var targetLang = lang.startsWith('fr') ? 'fr' : 'en';
+      window.location.href = targetLang + '/index.html';
+    })();
+  </script>
+</head>
+<body>
+  <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; text-align: center; padding: 2rem;">
+    <img src="assets/images/logo3.png" alt="Vibe Logo" style="height: 80px; margin-bottom: 2rem;">
+    <h1>Welcome to Vibe / Bienvenue sur Vibe</h1>
+    <p style="margin: 2rem 0;">Choose your language / Choisissez votre langue</p>
+    <div style="display: flex; gap: 1rem;">
+      <a href="en/index.html" class="btn btn-primary" style="padding: 1rem 2rem;">English</a>
+      <a href="fr/index.html" class="btn btn-accent" style="padding: 1rem 2rem;">Francais</a>
+    </div>
+  </div>
+</body>
+</html>
