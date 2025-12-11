@@ -1,18 +1,24 @@
 /* Vibe App - Documentation Styles */
 
 :root {
-  --primary-color: #7D9B76;
-  --primary-dark: #5a7a52;
-  --accent-color: #F28C5A;
-  --accent-dark: #d97a4a;
-  --text-primary: #2D3748;
-  --text-secondary: #718096;
-  --background: #FFFFFF;
-  --surface: #F7FAFC;
-  --border: #E2E8F0;
-  --success: #48BB78;
-  --warning: #ED8936;
-  --error: #F56565;
+  /* Couleurs de l'app Vibe */
+  --primary-color: #FF7A59;
+  --primary-dark: #E55A3A;
+  --primary-light: #FF9580;
+  --secondary-color: #A8D8B9;
+  --secondary-dark: #8BC9A1;
+  --accent-color: #F6E05E;
+  --text-primary: #1F2937;
+  --text-secondary: #6B7280;
+  --text-tertiary: #9CA3AF;
+  --background: #FAFAFA;
+  --surface: #FFFFFF;
+  --surface-variant: #F5F5F5;
+  --border: #E5E7EB;
+  --success: #10B981;
+  --warning: #F59E0B;
+  --error: #EF4444;
+  --info: #3B82F6;
   --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   --radius: 12px;
@@ -63,7 +69,7 @@ nav {
 }
 
 .logo img {
-  height: 40px;
+  height: 60px;
   width: auto;
 }
 
@@ -95,7 +101,7 @@ nav {
 
 .nav-links a.active {
   color: var(--primary-color);
-  background: rgba(125, 155, 118, 0.1);
+  background: rgba(255, 122, 89, 0.1);
 }
 
 /* Mobile Menu */
@@ -129,7 +135,7 @@ nav {
 
 .hero p {
   font-size: 1.2rem;
-  opacity: 0.9;
+  color: white;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -272,7 +278,7 @@ li {
 }
 
 .alert-info {
-  background: rgba(125, 155, 118, 0.1);
+  background: rgba(255, 122, 89, 0.1);
   border-left: 4px solid var(--primary-color);
 }
 
